@@ -21,6 +21,7 @@ class SearchViewModel {
     }
     
     func handleResult(result: NSArray) {
+        searchItems.removeAll()
         for resultItem in result {
             let videoRenderer = (resultItem as! NSDictionary)["videoRenderer"]
             if ((videoRenderer) != nil) {
