@@ -7,8 +7,7 @@
 
 import UIKit
 
-class SearchController: UIViewController {
-    
+class SearchController: UIViewController {    
     @IBOutlet private weak var searchTextField: UITextField!
     @IBOutlet private weak var collection: UICollectionView!
     
@@ -20,7 +19,6 @@ class SearchController: UIViewController {
 
         collectionSetup()
         viewModelConfig()
-//        viewModel.getVideos(text: "ronaldo")
     }
     
     fileprivate func collectionSetup() {
